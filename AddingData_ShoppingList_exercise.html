@@ -1,0 +1,82 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Adding Data to Shopping List through input field</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <style type="text/css">
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+            .header_main{
+                color:Blue;
+                text-shadow:2px 2px 6px gray;
+                font-size: 55px;
+            }
+            p{
+                color:orangered;
+                text-decoration:underline;
+            }
+            .text_effect{
+                display: none;
+            }
+            input,button{
+                padding: 10px 15px;
+                border:1px solid #ccc;
+                border-radius: 5px;
+                outline: 0;
+            }
+            button{
+                background-color: blue;
+                color:white;
+                margin-left:5px;
+                cursor: pointer;
+            }
+            .done{
+                text-decoration: line-through;
+            }
+            #list{
+                padding-left: 0px;
+                width: 25%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            li{
+                padding: 10px 10px;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #ccc;
+                justify-content: space-between;
+            }
+            li:hover{
+                background-color:aliceblue;
+            }
+            li:last-child{
+                border-bottom: 0;
+            }
+            .material-symbols-outlined{
+                color:red;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Let's add Items to the shopping list</h2>
+
+        <input type="text" id="input" placeholder="Enter your list items">
+        <button id="btn">Add</button>
+
+        <ul id="list">
+           <li><strong>Story Books</strong> <span class="material-symbols-outlined">delete</span></li>
+           <li><strong>Pencil box</strong> <span class="material-symbols-outlined">delete</span></li>
+           <li><strong>Ice Cream</strong> <span class="material-symbols-outlined">delete</span></li>
+           <li><strong>Toys</strong> <span class="material-symbols-outlined">delete</span></li>
+        </ul>
+        
+        
+        <script type="text/javascript" src="AddingData_ShoppingList_exercise.js"></script>
+    </body>
+</html>
